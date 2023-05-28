@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="tlacitkaTextPole.css">
+  <style>
+    #textPole {
+      width: 550px;
+      height: 225px;
+      resize: none; 
+      border-radius: 5px; 
+    }
+
+    #TlacitkaVzhled {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      margin-top: 550px;
+      padding:auto;
+      margin-left: 70px; 
+    }
+
+    .tlacitko {
+      margin-bottom: 10px;
+      border-radius: 5px; 
+    }
+  </style>
+</head>
+<body>
+  <div id="TlacitkaVzhled">
+    <button class="tlacitko">Tlačítko 1</button>
+    <button class="tlacitko">Tlačítko 2</button>
+    <button class="tlacitko" onclick="Exit()">-Exit-</button>
+  </div>
+  <textarea id="textPole" placeholder="..." readonly></textarea> 
+
+  <script>
+    function Exit() {
+      window.location.href = 'https://www.google.com';
+    }
+  </script>
+</body>
+</html>
